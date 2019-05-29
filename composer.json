@@ -1,0 +1,45 @@
+{
+  "name": "lfml/laravel-repository",
+  "description": "Laravel 5 - Repositories to  the database layer",
+  "keywords": ["laravel", "repository", "eloquent", "model", "cache"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anderson Andrade",
+      "homepage": "http://andersonandra.de",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "http://lfml.github.io/laravel-repository",
+  "support": {
+    "issues":"https://github.com/lfml/laravel-repository/issues",
+    "wiki":"https://github.com/lfml/laravel-repository",
+    "source":"https://github.com/lfml/laravel-repository",
+    "docs": "http://lfml.github.io/laravel-repository"
+  },
+  "require": {
+    "laravel/framework": "5.8.*",
+    "lfml/laravel-validation": "1.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Prettus\\Repository\\": "src/Prettus/Repository/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "suggest": {
+    "league/fractal": "Required to use the Fractal Presenter (0.12.*).",
+    "robclancy/presenter": "Required to use the Presenter Model (1.3.*)",
+    "prettus/laravel-validation": "Required to provide easy validation with the repository (1.1.*)"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Prettus\\Repository\\Providers\\RepositoryServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
+}
